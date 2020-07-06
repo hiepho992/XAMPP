@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    font-weight: 600;
+    /* background-color: cadetblue; */
+}
+.navbar .img{
+    background: url('../icon/BANNER-Books-V2.jpg') no-repeat center center/cover;
+    height: 100px;
+    width: 100%;
+}
+.header{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+}
+.header img{
+ 
+    height: 130px;
+    width: 500px;
+}
+.header h1{
+    color: #28bdb3;
+    font-weight: bolder;
+    font-size: 60px;
+}
+.search{
+    
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 15px;
+    color: #fff;
+}
+.search form, .search a{
+    margin: 5px;
+    color: #333;
+    text-decoration: none;
+    font-weight: lighter;
+}
+#search{
+    position: relative;
+}
+.search form button{
+    /* position: absolute;
+    right: 230px;
+    top: 127px; */
+    /* border: none; */
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+}
+.search form{
+    align-items: center;
+}
+.search form, .search i{
+    font-size: 20px;
+    font-weight: 100;    
+}
+[type="text"]{
+    padding-left: 5px;
+    border: none;
+    width: 300px;
+    height: 25px;
+    box-shadow: 0px 0px 5px #333;
+}
+.list{
+    width: 100%;
+    border-bottom: 1px solid #333 ;
+    background-color:#a18557;
+}
+.list ul{
+    display: flex;
+    list-style: none;
+}
+.list ul li{
+    position: relative;
+    margin: 15px;
+    text-align: center;
+    width: 180px;
+}
+.list ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color:#fff;
+    line-height: 2px;
+    width: 100%;
+}
+.list ul li a:hover{
+    color: #28bdb3;
+}
+.list ul li ul{
+    position: absolute;
+    flex-direction: column;  
+    line-height: 2px;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(238, 222, 222, 0.9);
+    width: 180px;
+    
+    
+}
+.list ul li ul li{
+    width: 100%;
+}
+.list ul li ul li a{
+    color: black;
+}
+.list ul li ul li{
+    display: none;
+    text-align: center;
+    
+}
+.list ul li:hover ul li{
+    display: block;
+    z-index: 20;
+}
+
+.products{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    padding-left: 100px;
+}
+
+
+.products a img{
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+}
+.product-pro{
+    height: 350px;
+    width:300px;
+    float: left;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, .8);
+    background-color: #F3FAFB;
+    z-index: 10;
+}
+.product-pro:hover{
+    transform: scale(1.2);
+    z-index: 3;
+}
+.idproduct{
+    display: none;
+}
+/* section login */
+.loginup{
+    background-color: #F3FAFB;
+    padding: 100px;
+    font-weight: normal;
+}
+.login-sign{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    border: 1px solid gray;
+    box-shadow: 0px 10px 10px #9FA5B5;
+}
+.login-sign .login{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border-right: 1px solid #F3FAFB;
+}
+
+.login-sign .info{
+    width: 50%;
+}
+.login button{
+    cursor: pointer;
+    padding: 0px 10px;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0px 55px;
+}
+.login button img{
+    height: 20px;
+}
+.img-btn{
+    text-align: center;
+}
+.img-btn, .img-btn1{
+    margin: 20px;
+}
+.login input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.img-btn1 [type="checkbox"]{
+    height: 10px;
+    width: 10px;
+}
+.img-btn p, .img-btn1 p{
+    margin-top: 15px;
+}
+.login-sign a, .login-sign i{
+    color: rgb(17, 79, 211);
+}
+[value="Log in"]{
+    background-color: #252F44;
+    color: #fff;
+}
+[value="Log in"]:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.info{
+    margin: 30px;
+}
+.icons{
+    margin: 20px;
+}
+.info span{
+    float: left;
+}
+.icons h3, .icons p{
+    margin-left: 40px;
+}
+
+/* chi tiet */
+.chitiet{
+    display: flex;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.chitiet .image{
+   flex: 1;
+   padding: 20px;
+   text-align: center;
+ 
+}
+.chitiet .image img{
+    margin-top: 10px;
+    height: 400px;
+    width: 400px;
+}
+.chitiet .content{
+  flex: 1;
+  line-height: 50px;
+  padding-top: 50px;
+}
+#info{
+    line-height: 30px;
+}
+.chitiet .content button{
+    margin: 10px 0px;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+}
+.chitiet .content button:hover{
+    background-color: #28bdb3;
+}
+.chitiet .content button a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    padding: 15px 0px;
+    font-size: 20px;
+}
+
+/* orderdetail */
+.cart{
+    text-align: center;
+    padding: 5px 10px;
+    width: 100%;
+}
+.cart h3{
+    margin: 5px 0px;
+    font-size: 20px;
+}
+.orderdetail, th, tr, td{
+    border: 1px solid #333;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: left;
+}
+.orderdetail th{
+    text-align: center;
+    padding: 5px;
+}
+.orderdetail td{
+    height: 30px;
+    padding: 5px;
+}
+#orderdetailimg{
+    height: 100px;
+    width: 100px;
+}
+.delete {
+    margin: 2px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.delete:hover{
+    background-color: turquoise;
+}
+.slide{
+    width:1000px ;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.move-icons{
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    margin: 0 5px;
+    font-size: 30px;
+    display: none;
+}
+
+.move-icons i:last-child{
+    position: relative;
+    left: 923px;
+   
+}
+.slide:hover .move-icons{
+    display: block;
+}
+.move-slide{
+    width: 9999px ;
+    transition: all 0.6s;
+}
+
+.slide .move-slide img{
+    height: 400px;
+    width: 1000px;
+    float: left;
+}
+/* footer */
+.footer{
+    background: url('../icon/bg_footer.png') no-repeat center center/cover;
+    height: 300px;
+    justify-content: space-between;
+    background-color: #28bdb3;
+    width: 100%;
+    padding: 40px;
+}
+.div-footer img{
+    height: 100px;
+    width: 150px;
+}
+.div-footer p{
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 25px;
+
+}
+.div-footer p:last-child{
+   margin: 100px;
+}
+.div-footer a{
+    text-decoration: none;
+    color:#333;
+    text-align: center;
+    margin: 15px;
+    font-size: 30px;
+}
+.div-footer a:hover{
+    color: #28bdb3
+}
